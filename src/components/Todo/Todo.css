@@ -1,0 +1,63 @@
+body{
+    background-color: #04043a;
+}
+.heading-center{
+    color: white;
+    font-size: 35px;
+}
+.main-container{
+    text-align: center;
+}
+.form-flex{
+    display: flex;
+    justify-content: center;
+}
+.button-add{
+    padding: 10px 15px;
+    background: #00c0ff;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+}
+.input-field{
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+}
+.orderlist{
+    list-style: none;
+}
+.task_list{
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 25px 35%;
+    border-radius: 10px;
+}
+.check-color{
+    font-size: 20px;
+    color: #24b124;
+}
+.delte-color{
+    font-size: 20px;
+    color: red;
+}
+.date-color{
+    color: white;
+}
+.clear{
+    background-color: #f63939;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.checkedlist{
+    text-decoration: line-through;
+}
+.notcheckedlist{
+    text-decoration: none;
+}
