@@ -8,7 +8,7 @@ import { NewTodo } from './components/Todo/New_todo.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
-    <Todo/>
-    {/* <NewTodo/> */}
+    {/* <Todo/> */}
+    <NewTodo/>
   </StrictMode>,
 )

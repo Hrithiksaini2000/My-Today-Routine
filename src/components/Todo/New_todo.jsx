@@ -3,10 +3,11 @@ import "../Todo/Todo.css"
 import { NewDate } from "./New_todo/New_Date_Time"
 import { TodoForm } from "./New_todo/Todo_form"
 import { ListNewTodo } from "./New_todo/List_Todo"
+import { Localstorage_getitem, Localstoragesetitem } from "./New_todo/Local_Storage"
 
 export const NewTodo = () => {
     // All States define
-    const [task, setupdatetask] = useState([])
+    const [task, setupdatetask] = useState(()=> Localstorage_getitem())
 
     // Handle task add and submit  
     const handlesubmitf=(inputve)=>{
@@ -16,6 +17,8 @@ export const NewTodo = () => {
             if(newm) return
             setupdatetask((prevalue) => [...prevalue, {id,content,checked}])
     }
+            // Local Storage Set Item
+        Localstoragesetitem(task)
  // For delte handling
         const deleted=(value)=>{
            const updatetask= task.filter(curretask=>{
@@ -47,7 +50,7 @@ export const NewTodo = () => {
         }
     return (
         <section className="main-container">
-            <h1 className="heading-center">Todo List</h1>
+            <h1 className="heading-center">My Daily Routine</h1>
             <NewDate/>
             <TodoForm onAddt={handlesubmitf}/>
             <div>

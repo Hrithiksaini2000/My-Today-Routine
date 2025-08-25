@@ -61,3 +61,11 @@ body{
 .notcheckedlist{
     text-decoration: none;
 }
+@media (min-width: 280px) and (max-width: 767px){
+    .orderlist{
+        padding: 0px;
+    }
+    .task_list{
+           margin: 25px 15%;
+    }
+} 
