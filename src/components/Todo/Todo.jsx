@@ -1,9 +1,9 @@
 import { useState } from "react"
 import "../Todo/Todo.css"
-import { Todo_input } from "./Todo_input";
-import { List } from "./Todo_list";
-import { Date_Time } from "./Date_Time";
-import { Localstoragegetitem, Locatstoragesetitem } from "./Todo_local_storage";
+import { Todo_input } from "./Old_todo/Todo_input";
+import { List } from "./Old_todo/Todo_list";
+import { Date_Time } from "./Old_todo/Date_Time";
+import { Localstoragegetitem, Locatstoragesetitem } from "./Old_todo/Todo_local_storage";
 
 
 export const Todo = () => {
